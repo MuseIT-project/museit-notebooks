@@ -1,0 +1,2 @@
+PASSWORD=museit
+TOKEN=museit

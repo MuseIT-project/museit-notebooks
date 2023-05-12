@@ -1,0 +1,22 @@
+version: "3.3"
+
+services:
+  jupyter:
+    user: root
+    #image: jupyter/scipy-notebook
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/home/jovyan/
+      - ./config.py:/home/jovyan/config.py
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+    networks:
+      - traefik
+    command: "start-notebook.sh --NotebookApp.token='${TOKEN}' --NotebookApp.password='${PASSWORD}'"
+#     command: "start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''"
+
+networks:
+  traefik:
+    external: true
