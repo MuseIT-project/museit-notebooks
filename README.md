@@ -1,4 +1,4 @@
-#MuseIT Jupyter Notebooks collection
+# MuseIT Jupyter Notebooks collection
 
 Warning: you need [Docker Desktop](https://www.docker.com/products/docker-desktop/) or Docker.io installed in your OS.
 
@@ -11,4 +11,4 @@ Now you can start notebook by running:
 ```
 docker-compose up -d
 ```
-Open Jupyter Notebook on http://0.0.0.0:8888 and enter your password or token from .env file (museit is default password).
+Open Jupyter Notebook on http://0.0.0.0:8888 and enter your password or token from .env file ('museit' is default password).
