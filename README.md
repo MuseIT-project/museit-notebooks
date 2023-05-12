@@ -11,4 +11,4 @@ Now you can start notebook by running:
 ```
 docker-compose up -d
 ```
-Open Jupyter Notebook on http://0.0.0.0:8888 and enter your password or token from .env file ('museit' is default password).
+Open Jupyter Notebook instance running on http://0.0.0.0:8888 and enter your password or token from .env file ('museit' is default password).
