@@ -4,12 +4,12 @@ services:
   jupyter:
     user: root
     #image: jupyter/scipy-notebook
+    container: museit-jupyter
     build: .
     ports:
       - "8888:8888"
     volumes:
       - ./notebooks:/home/jovyan/
-      - ./config.py:/home/jovyan/notebooks/config.py
     environment:
       JUPYTER_ENABLE_LAB: "yes"
     networks:
